@@ -8,7 +8,7 @@ from django.views.generic.detail import DetailView
 from .models import Post
 
 # Create your views here.
-class PostListView():
+class PostListView(ListView):
     model = Post
 
 class PostCreateView(CreateView):
